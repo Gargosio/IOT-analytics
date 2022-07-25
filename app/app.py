@@ -116,7 +116,7 @@ figtemp = px.area(df, x="time", y="Temperature",line_shape='spline',
 figtemp.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
-'margin':{'l': 20, 'r': 20},
+'margin':{'l': 10, 'r': 10},
 'font_color':"#ffffff",
 'title_font_color':"#ffffff",
 "title_font":{'size': 20},
@@ -134,7 +134,7 @@ fighum = px.area(df, x="time", y="Humidity",line_shape='spline',title='Humidity 
 fighum.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
-'margin':{'l': 20, 'r': 20},
+'margin':{'l': 10, 'r': 10},
 'font_color':"#ffffff",
 'title_font_color':"#ffffff",
 "title_font":{'size': 20},
@@ -421,15 +421,21 @@ dash_table.DataTable(
          ),
        html.P(),
        
-       html.P(["℗ Powered by Drocon Infographics"], className = 'flicker2'),
+      # html.P(["℗ Powered by Drocon Infographics"], className = 'flicker2'),
         #########################################################
-       html.H4(" Contact tevin9316@gmail.com for more information"
+        
+        html.H5("Data provided by Sigfox servers from sensors installed in local Agricultural farms"
+                ,style = {"background-color":"rgba(0,0,0,0.0)","border-color":"rgb(0,0,0,0.0)","text-align":"center","color":"#cb4154",}
+                ),
+       html.H6("Contact tevin9316@gmail.com for more information"
                ,style = {"background-color":"rgba(0,0,0,0.0)","border-color":"rgb(0,0,0,0.0)","text-align":"center","color":"#cb4154",}
                ),
+     
        
     ]
 )
-    ]
+    
+    ] 
     , style = {"background-color":"#b0e0e6","border-color":"#cb4154",})
 
 @app.callback(
@@ -566,6 +572,7 @@ def update_humgraph(n_intervals):
     'paper_bgcolor': 'rgba(0, 0, 0, 0)',
     'font_color':"#ffffff",
     'title_font_color':"#ffffff",
+    'margin':{'l': 10, 'r': 10},
     "title_font":{'size': 20},
     })
     fighum.update_xaxes(showgrid=False)
@@ -598,6 +605,7 @@ def update_tempgraph(n_intervals):
     'paper_bgcolor': 'rgba(0, 0, 0, 0)',
     'font_color':"#ffffff",
     'title_font_color':"#ffffff",
+    'margin':{'l': 10, 'r': 10},
     "title_font":{'size': 20},
     })
     figtemp.update_xaxes(showgrid=False)
