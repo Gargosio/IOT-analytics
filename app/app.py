@@ -424,7 +424,7 @@ dash_table.DataTable(
       # html.P(["℗ Powered by Drocon Infographics"], className = 'flicker2'),
         #########################################################
         
-        html.H5("Data provided by Sigfox servers from sensors installed in local Agricultural farms"
+        html.H5("Data provided by Liquid Intelligent Technologies' IoT sensors installed in a local greenhouse farm."
                 ,style = {"background-color":"rgba(0,0,0,0.0)","border-color":"rgb(0,0,0,0.0)","text-align":"center","color":"#cb4154",}
                 ),
        html.H6("Contact tevin9316@gmail.com for more information"
