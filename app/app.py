@@ -155,7 +155,7 @@ app.layout = dbc.Container(fluid=True,
             [
                html.P(),
                html.P(),  
-     html.H4("DHT11 Sensor Analytics (Last 24 Hours)"
+     html.H4("DHT11 Sensor Analytics"
              ,style = {"background-color":"rgba(0,0,0,0.0)","border-color":"rgb(0,0,0,0.0)","text-align":"center","color":"#cb4154",}
              ),
      ]
