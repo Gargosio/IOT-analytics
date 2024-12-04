@@ -21,7 +21,7 @@ from dash.dependencies import Input, Output
 
 ################
 
-client = pymongo.MongoClient("mongodb+srv://toloo:Godocholoo@cluster0.idj1r.mongodb.net/test")
+client = ********************************** #put mongo db credentials
 db = client["iotdatadb"]
 col = db["iotdatacoll"]
 
